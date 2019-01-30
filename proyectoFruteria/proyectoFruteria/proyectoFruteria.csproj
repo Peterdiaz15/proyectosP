@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{373C514D-C889-4B57-8B2E-D33EB2F572E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>proyectoFruteria</RootNamespace>
+    <AssemblyName>proyectoFruteria</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="Datos\CrearTicket.cs" />
+    <Compile Include="Datos\DAOcategoria.cs" />
+    <Compile Include="Datos\DAOproducto.cs" />
+    <Compile Include="Datos\DAOVentaProducto.cs" />
+    <Compile Include="Datos\DAOventas.cs" />
+    <Compile Include="Datos\RawPrinterHelper.cs" />
+    <Compile Include="Datos\Ticket.cs" />
+    <Compile Include="Datos\validar.cs" />
+    <Compile Include="Pojos\agregarProducto.cs" />
+    <Compile Include="Pojos\MostrarProducto.cs" />
+    <Compile Include="Pojos\VarCategoria.cs" />
+    <Compile Include="Pojos\VarProducto.cs" />
+    <Compile Include="Pojos\VarVentas.cs" />
+    <Compile Include="Vista\EditarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AgregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AgregarCategoria.Designer.cs">
+      <DependentUpon>AgregarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\AgregarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AgregarProducto.Designer.cs">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\CatalogoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\CatalogoProductos.Designer.cs">
+      <DependentUpon>CatalogoProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\EditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\EditarProducto.Designer.cs">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\CatalogoVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\CatalogoVentas.Designer.cs">
+      <DependentUpon>CatalogoVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\MasProductos.Designer.cs">
+      <DependentUpon>MasProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\reportProductosT.cs">
+      <DependentUpon>reportProductosT.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Vista\reportProducto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportProducto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vista\ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ticket.Designer.cs">
+      <DependentUpon>ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ventaDiaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ventaDiaria.Designer.cs">
+      <DependentUpon>ventaDiaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VerReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VerReporte.Designer.cs">
+      <DependentUpon>VerReporte.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\AgregarCategoria.resx">
+      <DependentUpon>AgregarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\AgregarProducto.resx">
+      <DependentUpon>AgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\CatalogoProductos.resx">
+      <DependentUpon>CatalogoProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\EditarCategoria.resx">
+      <DependentUpon>EditarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\EditarProducto.resx">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\CatalogoVentas.resx">
+      <DependentUpon>CatalogoVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\MasProductos.resx">
+      <DependentUpon>MasProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\reportProductosT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportProductosT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\reportProducto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportProducto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\ticket.resx">
+      <DependentUpon>ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\ventaDiaria.resx">
+      <DependentUpon>ventaDiaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VerReporte.resx">
+      <DependentUpon>VerReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

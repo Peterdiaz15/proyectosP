@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace proyectoFruteria.Vista
+{
+    public partial class VerReporte : Form
+    {
+        public VerReporte()
+        {
+            InitializeComponent();
+        }
+    }
+}

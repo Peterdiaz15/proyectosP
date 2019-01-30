@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proyectoFruteria", "proyectoFruteria\proyectoFruteria.csproj", "{373C514D-C889-4B57-8B2E-D33EB2F572E9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{B147046B-D0EF-4154-8778-42E167606DA4}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup2", "Setup2\Setup2.vdproj", "{5E0E477C-00CF-4D98-A9A7-9B45735C4F4B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup3", "Setup3\Setup3.vdproj", "{530E1FEE-739A-472B-A249-698CB3DA04DD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup4", "Setup4\Setup4.vdproj", "{E323E58B-648D-4371-B268-8F383550F277}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{373C514D-C889-4B57-8B2E-D33EB2F572E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373C514D-C889-4B57-8B2E-D33EB2F572E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373C514D-C889-4B57-8B2E-D33EB2F572E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373C514D-C889-4B57-8B2E-D33EB2F572E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B147046B-D0EF-4154-8778-42E167606DA4}.Debug|Any CPU.ActiveCfg = Debug
+		{B147046B-D0EF-4154-8778-42E167606DA4}.Release|Any CPU.ActiveCfg = Release
+		{5E0E477C-00CF-4D98-A9A7-9B45735C4F4B}.Debug|Any CPU.ActiveCfg = Debug
+		{5E0E477C-00CF-4D98-A9A7-9B45735C4F4B}.Release|Any CPU.ActiveCfg = Release
+		{530E1FEE-739A-472B-A249-698CB3DA04DD}.Debug|Any CPU.ActiveCfg = Debug
+		{530E1FEE-739A-472B-A249-698CB3DA04DD}.Release|Any CPU.ActiveCfg = Release
+		{E323E58B-648D-4371-B268-8F383550F277}.Debug|Any CPU.ActiveCfg = Debug
+		{E323E58B-648D-4371-B268-8F383550F277}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFCF2A94-E375-49F5-9FB8-5EE22E2E82AB}
+	EndGlobalSection
+EndGlobal
