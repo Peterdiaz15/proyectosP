@@ -1,0 +1,31 @@
+
+#imgLogo{
+    width: 300px;
+}
+
+/*--------------estrellas-----------------*/
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+.clasificacion {
+  direction: rtl;
+ unicode-bidi: bidi-override;
+}
+label:hover, label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+.es {
+font-size: 30px;
+}
+#menu{
+border-style: dashed;        
+}

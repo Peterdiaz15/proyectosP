@@ -1,0 +1,19 @@
+ alter table entidad
+add column calificacion int  ;
+
+alter table entidad
+  add column visitas int  ;
+
+
+
+
+UPDATE entidad SET calificacion = 10 where _idEntidad = 1
+UPDATE entidad SET calificacion = 15  where _idEntidad = 2
+UPDATE entidad SET calificacion = 4  where _idEntidad = 3
+UPDATE entidad SET calificacion = 7  where _idEntidad = 4
+
+
+UPDATE entidad SET  visitas = 10 where _idEntidad = 1
+UPDATE entidad SET visitas = 11  where _idEntidad = 2
+UPDATE entidad SET visitas = 3 where _idEntidad = 3
+UPDATE entidad SET visitas = 6  where _idEntidad = 4

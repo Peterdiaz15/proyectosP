@@ -1,0 +1,53 @@
+
+#logo{
+  
+  height: 45px;
+  width: 45px;
+  margin-left: 10px;
+  margin-top: 40px;
+
+}
+
+#gluzzer{
+    font-size: 35px;
+    margin-left: 65px;
+    margin-top: -45px;
+    color:#F34334;
+    font-weight: bold;
+    font-family: "Times New Roman", Georgia, Serif;
+  
+}
+
+#Titulo{
+  font-size: 25px;
+  margin-top: -40px;
+  color:#FB6E21;
+  font-weight: bold;
+  font-family: "Times New Roman", Georgia, Serif;
+
+}
+
+
+#Titulo2{
+  font-size: 25px;
+  margin-top: -40px;
+  color:#FBBB0D;
+  font-weight: bold;
+  font-family: "Times New Roman", Georgia, Serif;
+
+}
+
+
+#btnRegCancelar{
+margin-left: 850px;
+margin-top: 30px;
+
+}
+
+
+@media print{
+
+  .imprimir , .btn-info, #btnRegCancelar{
+    display: none !important;
+  }
+}

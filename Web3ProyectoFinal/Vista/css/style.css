@@ -1,0 +1,355 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 25px;
+}
+/*---------------Pagina Principal-------*/
+.textUser{
+    color: #fff;
+}
+.ubicacionTexto{
+    margin-top: 8%;
+}
+.bg-rojo-c{
+    background-color: rgba(222, 41, 37,.9);
+}
+#ciudad{
+    font-size: 40px;
+    color: #de2925;
+    font-weight: 900;
+}
+.mg-top{
+    margin-top: 25%;
+    width: 70%;
+}
+#inputState{
+    width: 50%;
+    height: 45px;
+}
+.fondoImagen{
+    height: 100%;  
+}
+.btn-rojo{
+    background-color: #de2925;
+    width: 130px;
+    height: 45px;
+    font-size: 25px; 
+}
+.tituloModal{
+ color:#f34334;
+ font-size: 34px;
+ font-weight: 900;
+ margin-left: 35%;
+}
+.btn-azul{
+    background: #3b5998;
+    width: 100%;
+    font-size: 25px;
+}
+#fb,#g{
+    font-size: 40px;
+}
+.btn-rojoG{
+     background: #db4a39;
+    width: 100%;
+    font-size: 25px;
+}
+.btn-gris{
+    width: 103%;
+    font-size: 30px;
+}
+.margen{
+    margin: 5px;
+}
+
+.mod-centrar{
+    
+      justify-content: center;
+}
+
+/*---------Pagina Menu-------------------*/
+
+.scrollup{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom:-20px;
+    right: 40px;
+    text-indent:-9999px;
+    opacity:0.5;
+    cursor: pointer;
+    display:none;
+    background: url("../img/icon_top.png") no-repeat ;
+}
+
+.menu-fixed {
+    position:fixed;
+    z-index:1000;
+    top:0;
+    left: 15%;
+    max-width:1000px;
+    width:100%;
+    background-color: #de2925;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+.imgTamanoLogo{
+    width: 30%;
+}
+.ContImagenes{
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+}
+#imgMensaje{
+    transform: translate(-200px) rotate(360deg);
+    animation-delay: 1s;
+    animation-name:rodarMensaje;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.88, 0.39, 1.38);
+}
+#imgCentro{
+    transform: translate(-104%) scale(0, 0);
+    animation-delay: 2s;
+    animation-name:AparecerCentro;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.88, 0.39, 1.38);
+    
+}
+#imgTenedor{
+     transform: translateY(-70%) translateX(-208%);
+    animation-delay: 3s;
+    animation-name:bajarTenedor;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+     
+}
+#imgCuchillo{
+    transform: translateY(73%) translateX(-375%);
+    animation-delay: 4s;
+    animation-name:horCuchillo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.07, 0.88, 0.39, 1.38);
+    
+}
+
+#imgCuchara{
+   transform: translateY(70%) translateX(-416%);
+    animation-delay: 3s;
+    animation-name:subirCuchara;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.bg-rojo{
+    background-color: #de2925;
+}
+.titulo{
+    color: #de2925;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+.btn-Buscar{
+    font-size: 20px;
+    margin-top: -5px;
+}
+.checkTamano{
+  margin-top: 8px;
+  width: 18px;
+  height:18px;
+}
+.bg-white{
+     padding: 20px 0px 15px 0px;
+}
+.nav-item-tam{
+    font-size: 19px;
+    color: #838383;
+}
+
+
+/*-----------Animaciones-------------*/
+@keyframes rodarMensaje{
+    from{
+       transform: translate(-200px) rotate(360deg);
+    } to{    
+       transform: translate(0px) rotate(0deg);
+    }
+}
+
+@keyframes AparecerCentro{
+    from{
+       transform: translate(-104%) scale(0, 0); 
+    } to{
+       transform: translate(-104%) scale(1,1);
+    }
+}
+
+@keyframes bajarTenedor{
+    from{
+        transform: translateY(-70%) translateX(-208%);
+    } to{   
+         transform: translateY(-0%) translateX(-208%);
+    }
+}
+@keyframes subirCuchara{
+    from{
+       transform: translateY(70%) translateX(-416%);
+    } to{    
+         
+        transform: translateY(-0%) translateX(-416%);
+    }
+}
+@keyframes horCuchillo{
+    from{
+         transform: translateY(73%) translateX(-375%);
+    } to{
+       transform: translateY(3%) translateX(-315%);
+    }
+}
+
+
+/*------Cartas---------------*/
+.card-body{
+    height: 350px;
+    width: 350px;
+}
+.contenedor{
+    height: 100%;
+    width: 100%;
+    -webkit-perspective: 700;
+}
+.carta{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+.carta:hover{
+    transform: rotateY(180deg);
+}
+.lado {
+    width: 100%;
+    height:100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.frente{
+    background-color: #fff;
+}
+.tamCarta{
+    width: 100%;
+    height: 100%;
+}
+.esquinario{
+    position: absolute;
+    margin-top: 75%;
+    margin-left: -30%;
+     width: 30%;
+    height: 25%;
+}
+.atras{
+    background-color: #fafafa;
+    transform: rotateY(180deg);
+}
+.form-fav {
+  width: 90%;
+  margin: auto;
+  height: 50px;
+  text-align: right;
+}
+
+
+
+
+
+footer {
+    height: 20%;
+    width: 100%;
+    background-color: rgb(51,51,51);
+}
+.divPiePagina{
+    height: 100%;
+    width: 100%;
+    
+   
+}
+.LisImagenes li{
+    display: inline-flex;
+    margin-top: 15px;
+}
+.imgPP{
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+#divTwitter{
+    text-align: center;
+    justify-content: center;
+    margin: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(85,172,238);
+    float: left;
+}
+#divFacebook{
+     text-align: center;
+    justify-content: center;
+    margin: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(68,97,157);
+    float: left;
+}
+#divGoogle{
+     text-align: center;
+    justify-content: center;
+    margin: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(215,61,50);
+    float: left;
+}
+#divIn{
+     text-align: center;
+    justify-content: center;
+    margin: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(1,119,181);
+    float: left;
+}
+
+#divTwitter:hover{
+    background-color: rgb(127, 199, 253);
+}
+#divFacebook:hover{
+    background-color: rgb(94, 139, 230);
+}
+#divGoogle:hover{
+    background-color: rgb(242, 84, 72);
+}
+#divIn:hover{
+    background-color: rgb(16, 168, 248);
+}
+.divCiudadesPie, .divNegociosPie{
+    margin-top: 8px;
+    color: rgb(211, 211, 211);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+
+
+
